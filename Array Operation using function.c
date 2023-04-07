@@ -118,13 +118,13 @@ void binerysearch(int a[],int size,int element)
 {
    printf("Enter a number to search\n");
         scanf("%d",&element);
-         int start=0,mid, end=mid-1; 
+         int start=0,mid, end=size-1; 
          mid = (start+end)/2;
          while(start<=end){
          if(a[mid] < element)
          start = mid + 1;
          else if (a[mid] == element) {
-         printf("%d found at location %d.n", element, mid+1);
+         printf("%d found at location %d.n", element, mid);
         break;
          }
         else
