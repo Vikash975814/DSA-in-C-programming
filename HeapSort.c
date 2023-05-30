@@ -21,8 +21,8 @@ int main(){
 
 void heapyfy(int a[],int n){
     int index=n/2;
-    for(int i=index;i>1;i--){
-        reahypyphydownward(a,1,n);
+    for(int i=index;i>=1;i--){
+        reahypyphydownward(a,i,n);
     }
 }
 void reahypyphydownward(int a[],int start,int finish){
